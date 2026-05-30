@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive tasarım -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO TITLE -->
+  <title>HTML CSS JavaScript Dersleri | JR Software Academy</title>
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="JR Software Academy ile HTML, CSS ve JavaScript derslerini adım adım öğrenin. Başlangıç seviyesinden ileri seviyeye kadar modern web geliştirme eğitimi.">
+  <!-- SEO KEYWORDS -->
+  <meta name="keywords" content="html dersleri, css dersleri, javascript dersleri, web geliştirme eğitimi, programlama öğren, jr software academy">
+  <!-- AUTHOR -->
+  <meta name="author" content="JR Software Academy">
+  <!-- Arama motoru ayarı -->
+  <meta name="robots" content="index, follow">
+  <!-- Sosyal medya paylaşım kartı -->
+  <meta property="og:title" content="HTML CSS JavaScript Dersleri | JR Software Academy">
+  <meta property="og:description" content="HTML, CSS ve JavaScript öğrenmek isteyenler için modern web geliştirme dersleri.">
+  <meta property="og:image" content="photos/SoftwareAcademylogo.png">
+  <meta property="og:type" content="website">
+  <!-- Tarayıcı sekme ikonu -->
+  <link rel="icon" href="photos/SoftwareAcademylogo.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="html.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!-- HEADER BÖLÜMÜ BAŞLANGIÇ -->
+
+  <header>
+    <div class="logo">
+      <img src="photos/SoftwareAcademylogo.png" class="logo-img">
+      <div class="text-group">
+        <h1 class="title1">
+          <span class="jr">JR</span>
+          <span class="brand"> SOFTWARE ACADEMY</span>
+          </h1>
+        <p class="title2">
+          HTML, TEMEL CSS VE TEMEL JAVASCRIPT Eğtimindesiniz.<br>Başarılar!
+        </p>
+      </div>
+      <div class="course-title">
+        <h1 class="course-tr">HTML Fundamentals</h1>
+          <span class="course-en">CSS Basics Course<br>JavaScript Fundamentals</span>
+      </div>
+      <!-- SAĞ HTML LOGOSU -->
+      <div class="html-logo-area">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="html-big-logo">
+      </div>
+    </div>    
+  </header>
+
+  <!-- HEADER BÖLÜMÜ SON -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- İÇERİK BÖLÜMÜ BAŞLANGIÇ -->
+
+  <h1 class="maintext">Bu eğitimi tamamladığınızda, <span>HTML ile web sayfalarını</span> özgürce oluşturabilecek seviyeye ulaşacaksınız.</h1>
+
+  <section class="main-container">
+
+    <!-- SOL TARAF: PDF -->
+    <div class="left-panel">
+
+      <h3>Dersleri adım adım takip edin</h3>
+
+      <select id="pdfSelect">
+        <option value="" selected>Seçiniz...</option>
+        <option value="PDF/html_bolum1.pdf">BÖLÜM 1: GİRİŞ</option>
+        <option value="PDF/html_bolum2.pdf">Bölüm 2: TEMEL KAVRAMLAR</option>
+        <option value="PDF/html_bolum3.pdf">Bölüm 3: TEMEL İŞLEMLER VE KOMUTLAR</option>
+        <option value="PDF/html_bolum4.pdf">Bölüm 4: SEO VE SEMANTİK WEB</option>
+        <option value="PDF/html_bolum5.pdf">Bölüm 5: METİN VE LİSTELEME İŞLEMLERİ</option>
+        <option value="PDF/html_bolum6.pdf">Bölüm 6: RESİM İŞLEMLERİ</option>
+        <option value="PDF/html_bolum7.pdf">Bölüm 7: LİNK İŞLEMLERİ</option>
+        <option value="PDF/html_bolum8.pdf">Bölüm 8: TABLO İŞLEMLERİ</option>
+        <option value="PDF/html_bolum9.pdf">Bölüm 9: FORM İŞLEMLERİ</option>
+        <option value="PDF/html_bolum10.pdf">Bölüm 10: VİDEO VE SES İŞLEMLERİ</option>
+        <option value="PDF/html_bolum11.pdf">Bölüm 11: SİTE YAYINLAMA</option>
+        <option value="PDF/html_bolum12.pdf">Bölüm 12: TEMEL CSS BİLGİSİ</option>
+        <option value="PDF/html_bolum13.pdf">Bölüm 13: SEÇİCİ İŞLEMLERİ</option>
+        <option value="PDF/html_bolum14.pdf">Bölüm 14: CSS KUTU MODELİ</option>
+        <option value="PDF/html_bolum15.pdf">Bölüm 15: CSS İLE BİÇİMLENDİRME</option>
+        <option value="PDF/html_bolum16.pdf">Bölüm 16: FORM, LİNK VE MENÜLER</option>
+        <option value="PDF/html_bolum17.pdf">Bölüm 17: JAVASCRİPT NEDİR</option>
+      </select>
+
+      <iframe id="pdfViewer"></iframe>
+      <div id="pdfOverlay">
+        WEB GELİŞTİRME EĞİTİMİNE HAZIRSANIZ  
+        İLK DERSDEN BAŞLAYINIZ
+      </div>
+    </div>
+
+    <!-- SAĞ TARAF: EDITOR + PREVIEW -->
+    <div class="right-panel">
+
+      <textarea id="editor"><!DOCTYPE html></textarea>
+
+      <h4>Preview</h4>
+      <iframe id="preview"></iframe>
+
+    </div>
+
+  </section>
+
+  <!-- İÇERİK BÖLÜMÜ SON -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+        <div class="about">
+          <h3>Hakkımızda</h3>
+
+          <p class="about-text">
+            Yazılım dünyasına sağlam bir başlangıç yapmak isteyenler için
+            sade, anlaşılır ve modern eğitim içerikleri sunuyoruz.
+          </p>
+
+          <p class="about-text">
+            Amacımız, yazılım öğrenmek isteyen herkesin
+            en doğru yöntemlerle ilerleyebileceği
+            güçlü bir öğrenme temeli oluşturmaktır.
+          </p>
+        </div>
+
+        <div class="footer-brand">
+          <img src="photos/SoftwareAcademylogo.png" class="footer-logo">
+
+          <h4 class="footer-title">
+            JR SOFTWARE ACADEMY
+          </h4>
+
+          <p class="footer-slogan">
+            Modern yazılım eğitimleri ile
+            geleceğin geliştiricilerini yetiştiriyoruz.
+          </p>
+        </div>
+
+
+        <div class="contact">
+          <h3>İletişim</h3>
+
+          <a href="https://instagram.com/j.r_software.academy" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+            j.r_software.academy
+          </a>
+
+          <a href="mailto:jayhun9999@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+            jayhun9999@gmail.com
+          </a>
+
+          <a href="https://www.linkedin.com/in/ceyhun-rahimov-3519a5248" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" class="icon">
+            linkedin.com/in/ceyhun-rahimov-3519a5248
+          </a>
+      </div>
+    </div>
+
+    <div class="copy">
+      © 2026 JR Software Academy - Tüm hakları saklıdır
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script src="html.js"></script>
+
+</body>
+
+
+
+
+
+
+
+</html>

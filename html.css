@@ -1,0 +1,331 @@
+/* SAYFANIN GENEL STİLİ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f7f9fc;
+}
+
+/* SAYFANIN GENEL STİLİ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER BÖLÜMÜ BAŞLANGIÇ */
+header { 
+ padding: 20px; 
+ background: white; 
+ box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+} 
+.logo {
+ display: flex;
+ align-items: center;
+ gap: 40px; /* logoya 4cm hissi */
+}
+.logo-img { 
+ width: 150px; 
+ height: 150px; 
+} 
+.title1 { 
+ font-size: 30px; 
+ color:#1b4176; 
+} 
+.title2 {
+  font-size: 15px;
+  color:#64748b;
+  letter-spacing: 2px;
+}
+.title1, .title2 {
+  display: block;
+}
+.text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jr {
+  color: gold;
+  font-weight: 700;
+}
+.brand {
+  color: #1e3a8a; /* açık lacivert */
+  font-weight: 700;
+}
+.course-title{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-left: 100px;
+}
+.course-tr{
+  font-size:44px;
+  color:#df4b11;
+  font-weight:700;
+}
+.course-en{
+  font-size:24px;
+  letter-spacing:4px;
+  color:#1e3a8a;
+  font-weight:600;
+}
+
+/* SAĞ CSS LOGOSU */
+.html-logo-area{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:auto;
+  padding-right:90px;
+}
+.html-big-logo{
+    width:120px;
+    height:120px;
+    filter:drop-shadow(
+        0 10px 20px rgba(0,0,0,0.15)
+    );
+    transition:0.4s;
+}
+
+/* HOVER */
+.html-big-logo:hover{
+    transform:
+    rotate(-6deg)
+    scale(1.08);
+}
+
+/* HEADER BÖLÜMÜ SON*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* İÇERİK BÖLÜMÜ BAŞLANGIÇ */
+
+/*ortadakı metin */
+.maintext{
+  font-size:30px;
+  font-weight:700;
+  text-align:center;
+  color:#1e3a8a;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  padding:20px 30px;
+  border-radius:15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  width:fit-content;
+  margin:20px auto;
+  transition:0.3s;
+}
+.maintext:hover{
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+@keyframes typing{
+  from{ width:0; }
+  to{ width:100%; }
+}
+@keyframes blink{
+  50%{ border-color:transparent; }
+}
+.maintext span{
+  color:#df4b11;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-height: 600px;
+}
+#pdfOverlay {
+  position: absolute;
+  top: 300px; /* iframe içine oturur */
+  left: 50px;
+  right: 50px;
+  height: 400px;
+
+  background:rgb(239, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a8a;
+  letter-spacing: 2px;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+
+  z-index: 10;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  min-height: 900px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+.left-panel h3 {
+  margin-bottom: 10px;
+}
+.left-panel select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.left-panel iframe {
+  width: 100%;
+  height: 850px; /* büyütüldü */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  min-height: 900px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#editor {
+  height: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: monospace;
+}
+#preview {
+  height: 450px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* İÇERİK BÖLÜMÜ SON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER BÖLÜMÜ*/
+footer {
+  background: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top:1px solid #eee;
+}
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  align-items: center;
+}
+.footer-brand{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.footer-logo{
+  width:70px;
+  margin-bottom:10px;
+}
+.footer-title{
+  font-size:16px;
+  color:#1e3a8a;
+  letter-spacing:1px;
+}
+.footer-slogan{
+  font-size:13px;
+  color:#777;
+  margin-top:5px;
+  max-width:220px;
+  line-height:1.6;
+}
+.about{
+  max-width:320px;
+}
+.about-text{
+  font-size:14px;
+  line-height:1.7;
+  color:#555;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width:220px;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.contact a:hover {
+  color: #4f46e5;
+  transform: translateX(5px);
+}
+.icon {
+  width: 18px;
+  height: 18px;
+}
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: gray;
+}
+
+/* FOOTER BÖLÜMÜ*/

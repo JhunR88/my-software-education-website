@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive tasarım -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO TITLE -->
+  <title>JR Software Academy | Yazilim, Kodlama ve Programlama dersleri</title>
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="JR Software Academy ile HTML, CSS, JavaScript, 
+  Java, Python, C, C++, C#, SQL, Java, PHP, React, Flutter, Andorid Development, NodeJS ve Git öğrenin. 
+  Başlangıç seviyesinden ileri seviyeye kadar modern ve anlaşılır yazılım eğitimleri.">
+  <!-- SEO KEYWORDS -->
+  <meta name="keywords" content="html eğitimi, css eğitimi, javascript eğitimi, java eğitimi, python eğitimi, 
+  c eğitimi, c++ eğitimi, c# eğitimi, sql eğitimi, php eğitimi, react eğitimi, flutter eğitimi, 
+  android development eğitimi, nodejs eğitimi, git eğitimi, web geliştirme, yazılım öğrenme, yazılım kursu, programlama öğren">
+  <!-- AUTHOR -->
+  <meta name="author" content="JR Software Academy">
+  <!-- Google için site doğrulama (ileride eklenir) -->
+  <meta name="robots" content="index, follow">
+  <!-- Sosyal medya paylaşım görünümü -->
+  <meta property="og:title" content="JR Software Academy">
+  <meta property="og:description" content="HTML, CSS ve JavaScript, Java, Python, C, C++, C#, SQL, PHP, React, Flutter, 
+  Android Development, NodeJS ve Git öğrenmek isteyenler için modern yazılım eğitim platformu.">
+  <meta property="og:image" content="photos/SoftwareAcademylogo.png">
+  <meta property="og:type" content="website">
+  <!-- Tarayıcı sekmesi ikon -->
+  <link rel="icon" href="photos/SoftwareAcademylogo.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="javascript.css">
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<!-- HEADER BÖLÜMÜ BAŞLANGIÇ -->
+
+<header>
+
+  <div class="logo">
+
+    <!-- SOL LOGO -->
+    <img src="photos/SoftwareAcademylogo.png" class="logo-img" alt="Logo">
+
+    <!-- SOL YAZI GRUBU -->
+    <div class="text-group">
+
+      <h1 class="title1">
+        <span class="jr">J.R</span>
+        <span class="brand"> SOFTWARE ACADEMY</span>
+      </h1>
+
+      <p class="title2">
+        JavaScript Orta Seviye Eğitimdesiniz.<br>
+        Başarılar!
+
+    </div>
+
+    <!-- ORTA KURS BAŞLIK -->
+    <div class="course-title">
+
+      <h1 class="course-tr">JavaScript</h1>
+
+      <span class="course-en">
+        INTERMEDIATE COURSE<br>
+        PRACTICAL CODING PATH
+      </span>
+
+    </div>
+
+    <!-- SAĞ JS LOGOSU -->
+    <div class="js-logo-area">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+           class="js-big-logo" alt="JavaScript">
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HEADER BÖLÜMÜ SON -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- İÇERİK BÖLÜMÜ BAŞLANGIÇ-->
+
+<h1 class="main-text">Bu eğitimi tamamladığınızda, <span>Javascriptle web sitelerine</span> etkileşim kazandırarak onları dinamik ve canlı hale getirebileceksiniz.</h1>
+
+<section class="css-course">
+
+  <!-- SOL TARAF: PDF LİSTE -->
+  <div class="pdf-panel">
+    <div class="pdf-viewer">
+      <iframe id="pdfFrame"></iframe>
+    </div>
+
+    <h2>📘 JAVASCRİPT Dersleri</h2>
+
+    <div class="pdf-list">
+      <button onclick="loadPDF('PDFCSS/js.bolum1.pdf')">Bölüm 1 - JAVASCRİPTE GİRİŞ</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum2.pdf')">Bölüm 2 - ???</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum3.pdf')">Bölüm 3 - ???</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum4.pdf')">Bölüm 4 - ???</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum5.pdf')">Bölüm 5 - ???</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum6.pdf')">Bölüm 6 - ???</button>
+      <button onclick="loadPDF('PDFCSS/js.bolum7.pdf')">Bölüm 7 - ???</button>
+    </div>
+
+  </div>
+
+  <!-- SAĞ TARAF: EDITOR -->
+  <div class="editor-panel">
+
+    <div class="editor-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">VS CODE - PRACTICE</span>
+    </div>
+
+    <textarea id="codeEditor"></textarea>
+
+    <button class="run-btn" onclick="runCode()">Çalıştır</button>
+
+    <iframe id="preview"></iframe>
+
+  </div>
+
+</section>
+
+<!-- İÇERİK BÖLÜMÜ SON -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER BÖLÜMÜ BAŞLANGIÇ-->
+
+  <footer>
+    <div class="footer-grid">
+      <div class="about">
+        <h3>Hakkımızda</h3>
+          <p class="about-text">
+            Yazılım dünyasına sağlam bir başlangıç yapmak isteyenler için
+            sade, anlaşılır ve modern eğitim içerikleri sunuyoruz.
+          </p>
+
+          <p class="about-text">
+            Amacımız, yazılım öğrenmek isteyen herkesin
+            en doğru yöntemlerle ilerleyebileceği
+            güçlü bir öğrenme temeli oluşturmaktır.
+          </p>
+      </div>
+
+    <div class="footer-brand">
+      <img src="photos/SoftwareAcademylogo.png" class="footer-logo">
+      <h4 class="footer-title">
+        JR SOFTWARE ACADEMY
+      </h4>
+      <p class="footer-slogan">
+        Modern yazılım eğitimleri ile
+        geleceğin geliştiricilerini yetiştiriyoruz.
+      </p>
+    </div>
+
+        <div class="contact">
+            <h3>İletişim</h3>
+
+            <a href="https://instagram.com/j.r_software.academy" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+                j.r_software.academy
+            </a>
+
+            <a href="mailto:jayhun9999@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+                jayhun9999@gmail.com
+            </a>
+
+            <a href="https://www.linkedin.com/in/ceyhun-rahimov-3519a5248" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" class="icon">
+                linkedin.com/in/ceyhun-rahimov-3519a5248
+            </a>
+        </div>
+
+    </div>
+
+    <div class="copy">
+      © 2026 JR Software Academy - Tüm hakları saklıdır
+    </div>
+  </footer>
+
+  <!-- FOOTER BÖLÜMÜ SON-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SCRIPT DOSYASI -->
+
+  <script src="javascript.js"></script>
+
+
+
+  </body>
+</html>

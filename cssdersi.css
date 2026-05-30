@@ -1,0 +1,394 @@
+/* SAYFANIN TÜMÜ BAŞLANGIÇ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* SAYFANIN TÜMÜ SON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER BÖLÜMÜ BAŞLANGIÇ */
+
+.lesson-header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 6%;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.06);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+/* SOL LOGO */
+.lesson-logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+.lesson-logo-img{
+    width:95px;
+    height:95px;
+    object-fit:contain;
+    filter:drop-shadow(
+        0 8px 16px rgba(0,0,0,0.15)
+    );
+}
+.lesson-brand h1{
+    font-size:34px;
+    margin-bottom:6px;
+}
+.jr{
+    color:rgb(255,174,0);
+}
+.academy{
+    color:#1e3a8a;
+}
+.lesson-subtitle{
+    font-size:15px;
+    color:#64748b;
+    letter-spacing:1px;
+}
+
+/* ORTA BAŞLIK */
+.lesson-title-area{
+    text-align:center;
+}
+.lesson-title-area h2{
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:10px;
+    text-shadow:
+    0 5px 15px rgba(0,0,0,0.08);
+}
+.lesson-title-area p{
+    max-width:500px;
+    line-height:1.7;
+    font-size:15px;
+    color:#555;
+}
+
+/* SAĞ CSS LOGOSU */
+.css-logo-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.css-big-logo{
+    width:120px;
+    height:120px;
+    filter:drop-shadow(
+        0 10px 20px rgba(0,0,0,0.15)
+    );
+    transition:0.4s;
+}
+
+/* HOVER */
+.css-big-logo:hover{
+    transform:
+    rotate(-6deg)
+    scale(1.08);
+}
+
+/* HEADER BÖLÜMÜ SON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* İÇERİK BÖLÜMÜ BAŞLANGIÇ */
+
+/*ortadakı metin */
+.main-text{
+  font-size:30px;
+  font-weight:700;
+  text-align:center;
+  color:#1e3a8a;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  padding:20px 30px;
+  border-radius:15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  width:fit-content;
+  margin:20px auto;
+  transition:0.3s;
+}
+.main-text:hover{
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+@keyframes typing{
+  from{ width:0; }
+  to{ width:100%; }
+}
+@keyframes blink{
+  50%{ border-color:transparent; }
+}
+.main-text span{
+  color:rgb(255,174,0);
+}
+
+/* CONTENT SECTION START */
+
+.css-course{
+  display:flex;
+  align-items:stretch;
+  gap:20px;
+  padding:40px 8%;
+  background:#f7f9fc;
+}
+
+/* SOL PANEL */
+.pdf-panel{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  padding:20px;
+}
+
+.pdf-panel h2{
+  font-size:22px;
+  margin-bottom:15px;
+  color:#1e3a8a;
+}
+
+.pdf-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.pdf-list button{
+  padding:12px;
+  border:none;
+  background:#1e3a8a;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.pdf-list button:hover{
+  background:#ffae00;
+  color:black;
+  transform:translateX(5px);
+}
+
+/* SAĞ PANEL (EDITOR) */
+.editor-panel{
+  width:50%;
+  height: 1600px;
+  background:#0f172a;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  display:flex;
+  flex-direction:column;
+}
+
+.editor-header{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px;
+  background:#020617;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+
+.red{background:#ef4444;}
+.yellow{background:#facc15;}
+.green{background:#22c55e;}
+
+.title{
+  color:white;
+  margin-left:10px;
+  font-size:14px;
+}
+
+#codeEditor{
+  height: 700px;
+  background:#0f172a;
+  color:white;
+  border:none;
+  outline:none;
+  padding:15px;
+  font-family:Consolas, monospace;
+  font-size:14px;
+  resize:none;
+}
+
+.run-btn{
+  padding:10px;
+  background:#ffae00;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+#preview{
+  width:100%;
+  height: 800px;
+  background:white;
+  border:none;
+}
+
+/* PDF VIEWER (A4 görünüm hissi) */
+.pdf-viewer{
+  height: 1100px;
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+#pdfFrame{
+  width:100%;
+  height:1400px;
+  border:none;
+}
+
+/* ANİMASYON */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* CONTENT SECTION END */
+
+/* İÇERİK BÖLÜMÜ SON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER BÖLÜMÜ BAŞLANFIÇ */
+
+footer {
+  background: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top:1px solid #eee;
+}
+.footer-grid {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:120px;
+  flex-wrap:wrap;
+}
+/* FOOTER BRAND */
+.footer-brand{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.footer-logo{
+  width:70px;
+  margin-bottom:10px;
+}
+.footer-title{
+  font-size:16px;
+  color:#1e3a8a;
+  letter-spacing:1px;
+}
+.footer-slogan{
+  font-size:13px;
+  color:#777;
+  margin-top:5px;
+  max-width:220px;
+  line-height:1.6;
+}
+.about{
+  max-width:320px;
+}
+.about-text{
+  font-size:14px;
+  line-height:1.7;
+  color:#555;
+}
+.copy { 
+  text-align: center; 
+  margin-top: 30px; 
+  font-size: 13px; 
+  color: #888; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.contact a:hover {
+  color: #4f46e5;
+  transform: translateX(5px);
+}
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* FOOTER BÖLÜMÜ SON */
